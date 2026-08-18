@@ -1,0 +1,20 @@
+# Python artifacts
+__pycache__/
+*.py[cod]
+*.so
+.Python
+env/
+venv/
+ENV/
+
+# Temporary audio files generated during execution
+*.mp3
+*.wav
+temp_speech.mp3
+
+# Dataset files
+unigram_freq.csv
+
+# IDEs
+.vscode/
+.idea/
