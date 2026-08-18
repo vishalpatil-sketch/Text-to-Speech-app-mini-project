@@ -1,0 +1,5 @@
+pyttsx3>=2.90
+gTTS>=2.5.0
+pygame>=2.5.0
+pandas>=2.0.0
+requests>=2.31.0
