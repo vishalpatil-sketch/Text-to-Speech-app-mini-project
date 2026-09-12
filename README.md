@@ -14,5 +14,5 @@ A full-featured Python desktop application that converts user text into clear sp
 
 1. **Clone the repository:**
    ```bash
-   git clone [https://github.com/](https://github.com/)<your-username>/Text-To-Speech-Desktop-App.git
+   git clone [https://github.com/](https://github.com/)<Texttospeech>/Text-To-Speech-Desktop-App.git
    cd Text-To-Speech-Desktop-App
