@@ -1,18 +1,26 @@
-# Text-to-Speech-app-mini-project
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Content to Speech</title>
+</head>
+<body>
 
-# Text-to-Speech Desktop Application
+<h2>Content to Speech App</h2>
 
-A full-featured Python desktop application that converts user text into clear speech with support for both offline (`pyttsx3`) and online (`gTTS`) engines, customized audio controls, and audio saving capabilities.
+<textarea id="content" rows="10" cols="50"
+placeholder="Type or paste text here"></textarea>
 
-## Features
-- **Dual TTS Engine**: Switch seamlessly between offline (`pyttsx3`) and cloud-based (`gTTS`) text-to-speech synthesis.
-- **Audio Controls**: Full control for Play, Pause, Resume, Stop, and Save audio.
-- **Voice Customization**: Adjust speech speed (WPM), audio volume, and select installed system voice types.
-- **Dataset Benchmarking**: Includes automated testing scripts against the Kaggle English Word Frequency dataset.
+<br><br>
 
-## Installation
+<button onclick="readText()">Read Aloud</button>
 
-1. **Clone the repository:**
-   ```bash
-   git clone [https://github.com/](https://github.com/)<Texttospeech>/Text-To-Speech-Desktop-App.git
-   cd Text-To-Speech-Desktop-App
+<script>
+function readText() {
+  const text = document.getElementById("content").value;
+  const speech = new SpeechSynthesisUtterance(text);
+  speechSynthesis.speak(speech);
+}
+</script>
+
+</body>
+</html>
